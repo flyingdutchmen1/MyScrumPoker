@@ -12,7 +12,8 @@ npm install yargs'''
     }
     stage('Test') {
       steps {
-        sh './jenkins/scripts/test.sh'
+        sh '''npm start
+start chrome.exe http://localhost:8081'''
       }
     }
   }
