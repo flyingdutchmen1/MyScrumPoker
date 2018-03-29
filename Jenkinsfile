@@ -6,7 +6,8 @@ pipeline {
         sh '''npm install
 npm install express
 npm install jade
-npm install socket.io'''
+npm install socket.io
+npm install yargs'''
       }
     }
     stage('Test') {
