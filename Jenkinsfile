@@ -1,10 +1,9 @@
 pipeline {
-  agent any
+  agent none
   stages {
-    stage('build') {
+    stage('Build') {
       steps {
-        build 'test'
-        echo 'build step'
+        sh 'npm install'
       }
     }
   }
