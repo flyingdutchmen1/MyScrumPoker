@@ -21,6 +21,11 @@ npm install yargs'''
         sh 'start chrome.exe http://localhost:8081'
       }
     }
+    stage('Deliver') {
+      steps {
+        input 'Finished using the web site? (Click "Proceed" to continue)'
+      }
+    }
   }
   environment {
     CI = 'true'
