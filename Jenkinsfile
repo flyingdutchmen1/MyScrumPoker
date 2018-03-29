@@ -18,7 +18,7 @@ npm install yargs'''
     }
     stage('Test App') {
       steps {
-        sh 'runas /user:peter /savedcred "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe" "http://localhost:8081"'
+        sh 'strat "chrome.exe" "http://localhost:8081"'
       }
     }
     stage('Deliver') {
