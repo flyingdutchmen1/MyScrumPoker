@@ -10,10 +10,15 @@ npm install socket.io
 npm install yargs'''
       }
     }
-    stage('Test') {
+    stage('Startup App') {
       steps {
         sh '''npm start
-start chrome.exe http://localhost:8081'''
+'''
+      }
+    }
+    stage('Test App') {
+      steps {
+        sh 'start chrome.exe http://localhost:8081'
       }
     }
   }
