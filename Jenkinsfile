@@ -4,7 +4,9 @@ pipeline {
     stage('Build') {
       steps {
         sh '''npm install
-npm install express'''
+npm install express
+npm install jade
+npm install socket.io'''
       }
     }
     stage('Test') {
